@@ -27,7 +27,7 @@ def isUniqueWithSort(s):
 	"""
 	l = sorted(s)
 
-	for i in range(0, len(l), 2):
+	for i in range(len(l)):
 		if ( ( i < len(l) - 1 ) and ( l[i] == l[i + 1]) ):
 			return False
 
