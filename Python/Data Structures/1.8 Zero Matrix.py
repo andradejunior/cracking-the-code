@@ -16,7 +16,6 @@ def zeroMatrix(matrix):
 			if matrix[i][j] == 0:
 				row.append(i)
 				col.append(j)
-				break
 
 	for i in row:
 		for j in range(len(matrix[0])):
