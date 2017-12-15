@@ -8,11 +8,9 @@ def zeroMatrix(matrix):
 	col = []
 
 	for i in range(len(matrix)):
-		if i in row:
-			continue
+
 		for j in range(len(matrix[0])):
-			if j in col:
-				continue
+
 			if matrix[i][j] == 0:
 				row.append(i)
 				col.append(j)
