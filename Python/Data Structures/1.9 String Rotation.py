@@ -5,22 +5,22 @@ one call to isSubstring (e.g., "waterbottle" is a rotation of "erbottlewat")
 """
 
 def stringRotation(s1, s2):
-	"""
-	We can check if s1 is substring of the concatenation of s2 + s2.
-	Example:
-	Input: "waterbottle" and "erbottlewat"
-	Check if "waterbottle" is in "erbottlewaterbottlewat"
-	Output: True
-	"""
+    """
+    We can check if s1 is substring of the concatenation of s2 + s2.
+    Example:
+    Input: "waterbottle" and "erbottlewat"
+    Check if "waterbottle" is in "erbottlewaterbottlewat"
+    Output: True
+    """
 
-	if len(s1) == len(s2):
-		return isSubstring(s1, s2 + s2)
+    if len(s1) == len(s2):
+        return isSubstring(s1, s2 + s2)
 
-	return False
+    return False
 
 def isSubstring(s1, s2):
-	"""
-	Check if s1 is a substring of s2.
-	"""
-	
-	return s1 in s2
+    """
+    Check if s1 is a substring of s2.
+    """
+    
+    return s1 in s2

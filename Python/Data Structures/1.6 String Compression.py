@@ -8,20 +8,17 @@ assume the string has only uppercase and lowercase letters (a - z).
 def stringCompression(s):
 
 
-	sc = s[0]
-	count = 1
-	for i in range( len(s) -1 ):
-		if s[i] == s[i + 1]:
-			count += 1
-		else:
-			sc += str(count) + s[i + 1] # To improve performance we can append in a list and 
-			count = 1					# use ''.join(list) for concatenate the list into the sc
-	sc += str(count)
+    sc = s[0]
+    count = 1
+    for i in range( len(s) -1 ):
+        if s[i] == s[i + 1]:
+            count += 1
+        else:
+            sc += str(count) + s[i + 1] # To improve performance we can append in a list and 
+            count = 1                   # use ''.join(list) for concatenate the list into the sc
+    sc += str(count)
 
-	if len(s) > len(sc):
-		return sc
+    if len(s) > len(sc):
+        return sc
 
-	return s
-
-a = 'aabcccccaaa'
-print(stringCompression(a))
+    return s
