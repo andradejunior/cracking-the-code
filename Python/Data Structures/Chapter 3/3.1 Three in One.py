@@ -7,6 +7,7 @@ Describe how you could use a single array to implement three stacks.
 
 class FixedMultiStack:
     """Class for a Fixed Multi Stack."""
+
     def __init__(self, stack_size):
         """Init method."""
         self.num_stacks = 3
