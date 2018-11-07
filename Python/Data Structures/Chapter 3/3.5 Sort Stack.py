@@ -13,7 +13,7 @@ class Stack(list):
 
     def __init__(self):
         """Init method."""
-        super().__init__()
+        super()
 
     def is_empty(self):
         """Check if stack is empty."""

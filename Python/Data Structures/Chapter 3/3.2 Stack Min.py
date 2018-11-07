@@ -12,7 +12,7 @@ class Stack(list):
 
     def __init__(self):
         """Init method."""
-        super().__init__()
+        super()
 
     def peek(self):
         """Method to return the top of the stack."""
@@ -32,7 +32,7 @@ class StackWithMin(Stack):
 
     def __init__(self):
         """Init method."""
-        super().__init__()
+        super()
         self.min_stack = Stack()
 
     def min(self):
